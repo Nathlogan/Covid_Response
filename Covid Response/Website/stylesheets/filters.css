@@ -1,0 +1,86 @@
+#headless {
+    margin: 0 0 0 1vw;
+}
+#separator {
+    width:inherit;
+    height:48vh;
+    border: 2px solid grey;
+    margin: 0 0 8px 0;
+    overflow: auto;
+    background-color:white;
+}
+#float-filters {
+    width: 70vw;
+    margin:0 .7vw 0 0;
+    display:inline-block;
+    float:left;
+}
+#filter-container {
+    display: inline-block;
+}
+/* Style attribute sliders */
+.range-sliders {
+    width: 90%;
+    margin:0 auto;
+}
+/* Cover boxing/padding of Attribute and country filters */
+.filterFields {
+    height: 44.5vh;
+    padding: 10px;
+    margin: 0 0 0 1vw;
+    border: 2px solid grey;
+    overflow: auto;
+    float:left;
+    background-color:white;
+}
+.filterFields:first-child {
+    margin-left: 0px;
+    width: 25vw;
+}
+.filterFields:last-child {
+    width:44vw;
+}
+/* Style attribute items */
+.filterFields > li > input[type=text] {
+    padding: 0px;
+    margin: 0 0 10px 10px;
+    border:hidden; 
+    color:orange; 
+    font-weight:bold; 
+    overflow:hidden;
+    width: 50%;
+    background-color:inherit;
+}
+/* Style country items */
+.filterFields > li > input[type=checkbox] {
+    margin: 0 15px 0 10px;
+}
+/* Edit unordered list item formatting */
+.filterFields > li {
+    list-style: none;
+    border-bottom: 1px dotted lightgrey;
+}
+/* Alternate coloring on list items */
+.filterFields > li:nth-child(even)
+{
+    background-color: ghostwhite;
+}
+.filters > label {
+    margin-left: 10px;
+}
+.filters > label > span {
+    border-bottom: 1px dotted black;
+}
+.filters {
+    padding: 10px 0 20px 0;
+    margin: 5px;
+}
+/* "Filter By" <p> edits */
+.filterBy {
+    font-weight: bold;
+    font-size: 1.0rem;
+    padding-bottom: 5px;
+}
+#countryFilter > li {
+    padding: 1.5px;
+}

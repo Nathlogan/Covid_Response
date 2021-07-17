@@ -1,0 +1,8 @@
+delimiter $$
+drop procedure if exists showClosure;
+create procedure showClosure(in cname varchar(100), in closure varchar(100))
+begin
+	select f.date, f.confirmed, f.deaths, f.degree from (select c.date as date, c.conCases as confirmed, c.deaths as deaths, clo.cloDegree as degree, c.couCode as code from cases c, closes clo where c.couCode = clo.couCode and c.date = clo.date and clo.cloName = closure) as f, country where f.code = country.couCode and country.couName = cname order by f.date;
+
+end $$
+delimiter ;

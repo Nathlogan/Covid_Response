@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:lightgrey;
+
+    overflow:auto;
+}
+a:hover {
+    color: white;
+}
+header {
+    padding: .47em 0 .47em 0;
+    margin-bottom: .4em;
+    background-color: #c5050c;
+    width: 100vw;
+    height: 5vh;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+header > p {
+    float: left;
+}
+header > div {
+    display:inline-block;
+    width: 81vw;
+    text-align: center;
+}
+header > div > p, header > div > a {
+
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1em;
+    margin-right: 1em;
+    color: white;
+    font-size: 1.5vw;
+    float:left;
+}
+p, label, input {
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    text-align: center;
+}
+#primaryFields {
+    margin: 1.2em 0 0 1em;
+    width: 100vw;
+    display:inline-block;
+}
+.insertField{
+    display:inline-block;
+    padding: 1em;
+    border: 3px ridge black;
+    float:left;
+    margin: 0 2em .5em 0;
+}
+.dataNames {
+    margin:0;
+    padding:0;
+    float:left;
+    text-align: right;
+}
+.dataNames > label{
+    padding:.35em .6em .6em .6em;
+    font-size: 1.1em
+}
+.dataNames > label > p {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+#dataFields {
+    display: inline-block;
+}
+#dataFields > input {
+    margin: .62em 0;
+    height: 1.5em
+}
+#dataFields > input:last-child {
+    margin-bottom: 0;
+}
+#dataFields > input:first-child {
+    margin-top: 0.3em;
+}
+label[for=polName], label[for=polDegree] {
+    border-left: 2px solid red;
+    width: 11em;
+    color: red;
+}
+label[for=invName], label[for=invDegree] {
+    border-left: 2px solid green;
+    width: 11em;
+    color: green;
+}
+label[for=cloName], label[for=cloDegree] {
+    border-left: 2px solid blue;
+    width: 11em;
+    color: blue;
+}
+label[for=conCases], label[for=deaths] {
+    border-left: 2px solid darkorchid;
+    width: 11em;
+    color: darkorchid;
+}
+
+.requirements {
+    color: grey;
+    clear:both;
+    padding: .2em .4em;
+}
+#reqRight {
+    clear:none !important;
+    float: right !important;
+}
+
+form input[type=submit] {
+    float:right;
+    padding: .1em;
+    border-radius: 10%;
+}
+#legend {
+    width: 26.8em;
+    padding: .6em;
+    display:inline-block;
+    float: left;
+    border: 2px ridge black;
+}
+#legend > p {
+    margin-bottom: .8em
+}
+#deleteFields {
+    float:right;
+}
